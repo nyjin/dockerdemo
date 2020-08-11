@@ -1,4 +1,5 @@
 FROM node:14.7.0-buster-slim
+MAINTAINER zacronan@naver.com
 
 # pm2 설치
 RUN npm install -g pm2
