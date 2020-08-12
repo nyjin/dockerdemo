@@ -9,6 +9,8 @@ pylint = "*"
 [packages]
 flask = "*"
 flask-restful = "*"
+gunicorn = "*"
+flask-dotenv = "*"
 
 [requires]
 python_version = "3.8"
