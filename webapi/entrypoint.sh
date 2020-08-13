@@ -1,1 +1,1 @@
-gunicorn -w 4 -b localhost:7000 "app:create_app()" --access-logfile access.log --error-logfile error.log
+gunicorn -w 4 -b 0.0.0.0:80 "app:create_app()"

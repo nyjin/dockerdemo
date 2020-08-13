@@ -8,5 +8,7 @@ COPY . /app
 WORKDIR /app
 RUN pipenv install --deploy --system
 
+EXPOSE 80
+
 RUN chmod +x ./entrypoint.sh
-CMD ["sh", "./entrypoint.sh"]
+ENTRYPOINT ["bash", "./entrypoint.sh"]
